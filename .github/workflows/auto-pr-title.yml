@@ -1,0 +1,25 @@
+name: Auto Add Author to PR Title
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  update-title:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    
+    steps:
+      - name: Update PR Title
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_AUTHOR: ${{ github.actor }}
+        run: |
+          # 기존 제목 뒤에 ' - 작성자아이디'를 붙여서 새로운 제목 생성
+          NEW_TITLE="${PR_TITLE} - ${PR_AUTHOR}"
+          
+          # GitHub CLI(gh)를 사용해 PR 제목을 덮어씀
+          gh pr edit "$PR_NUMBER" --title "$NEW_TITLE"
