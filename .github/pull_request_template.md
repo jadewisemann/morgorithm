@@ -9,3 +9,4 @@
 | 03 13 | [BOJ #14890 경사로](?expand=1&template=14890.md&title=[BOJ]%2014890%20경사로) |
 | 2 주차 | === 그리디 === |
 | 03 17 |[백준 #1041 주사위](?expand=1&template=1041.md&title=[BOJ]%201041%20주사위) |
+| 03 18 |[백준 #1461 도서관](?expand=1&template=1461.md&title=[BOJ]%201461%20도서관) |
