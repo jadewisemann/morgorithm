@@ -9,3 +9,4 @@
 | 03 17 |[백준 #1041 주사위](?expand=1&template=1041.md&title=[BOJ]%201041%20주사위) |
 | 03 18 |[백준 #1461 도서관](?expand=1&template=1461.md&title=[BOJ]%201461%20도서관) |
 | 03 19 |[백준 #1202 보석 도둑](?expand=1&template=1202.md&title=[BOJ]%201202%20보석%20도둑) |
+| 03 20 |[백준 #1700 멀티탭 스케줄링](?expand=1&template=1700.md&title=[BOJ]%201700%20멀티탭%20스케줄링) |
